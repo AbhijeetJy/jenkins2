@@ -10,7 +10,7 @@ pipeline {
         }
         stage('mail') {
             steps {
-            mail bcc: '', body: 'is this working?', cc: '', from: '', replyTo: '', subject: 'pleasw', to: 'collegeexperiment16@gmail.com'
+            mail bcc: '', body: 'im trying this again!', cc: '', from: '', replyTo: '', subject: 'work again', to: 'collegeexperiment16@gmail.com'
     
             }
             }
