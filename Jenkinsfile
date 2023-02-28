@@ -6,11 +6,10 @@ pipeline {
             steps {
                 echo "Ok"
             }
+        
         }
+        stage('mail') {
+            mail bcc: '', body: 'is this working?', cc: '', from: '', replyTo: '', subject: 'pleasw', to: 'collegeexperiment16@gmail.com'
     }
-    post {
-        always {
-            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
-        }
     }
 }
